@@ -1,0 +1,2 @@
+/usr/local/lib/mc_controller/etc/WallController.yaml
+/usr/local/lib/mc_controller/WallController.so
