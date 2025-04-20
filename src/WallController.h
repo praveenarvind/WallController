@@ -23,8 +23,13 @@ struct WallController_DLLAPI WallController : public mc_control::MCController
 
   // In WallController class (WallController.h)
 
-  void touch_right_hand(const Eigen::Vector3d & position);
-  void touch_left_hand(const Eigen::Vector3d & position);
+  // void position_right_hand(const Eigen::Vector3d & position);
+  // void position_left_hand(const Eigen::Vector3d & position);
+  void position_right_hand();
+  void position_left_hand();
+
+  void touch_right_hand();
+  void touch_left_hand();
   void remove_right_hand();
   void remove_left_hand();
 
@@ -51,7 +56,10 @@ struct WallController_DLLAPI WallController : public mc_control::MCController
 
     double controllerDt = 0.0;
 
-    Eigen::Vector3d rightGripperPos = Eigen::Vector3d::Zero();
-    Eigen::Vector3d leftGripperPos = Eigen::Vector3d::Zero();
+    // Eigen::Vector3d rightGripperPos = Eigen::Vector3d::Zero();
+    // Eigen::Vector3d leftGripperPos = Eigen::Vector3d::Zero();
 
+    sva::PTransformd rightGripperPose = sva::PTransformd::Identity();
+    sva::PTransformd leftGripperPose = sva::PTransformd::Identity();
+    
 };

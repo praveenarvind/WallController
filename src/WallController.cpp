@@ -48,26 +48,48 @@ void WallController::touch_hand()
   addContact({robot().name(), "ground", "RightGripper", "AllGround"});
 }
 
-void WallController::touch_right_hand(const Eigen::Vector3d & position)
+// void WallController::position_right_hand(const Eigen::Vector3d & position)
+// {
+//   if(!rightGripperTask) return;
+  
+//   sva::PTransformd targetPose(Eigen::Matrix3d::Identity(), position); // just change position
+//   rightGripperTask->target(position);
+//   solver().addTask(rightGripperTask);
+// }
+
+// void WallController::position_left_hand(const Eigen::Vector3d & position)
+// {
+//   if(!leftGripperTask) return;
+
+//   sva::PTransformd targetPose(Eigen::Matrix3d::Identity(), position);
+//   leftGripperTask->target(position);
+//   solver().addTask(leftGripperTask);
+// }
+
+void WallController::position_right_hand()
 {
   if(!rightGripperTask) return;
-  
-  sva::PTransformd targetPose(Eigen::Matrix3d::Identity(), position); // just change position
-  rightGripperTask->target(position);
 
+  rightGripperTask->target(rightGripperPose);
   solver().addTask(rightGripperTask);
-
-  addContact({robot().name(), "ground", "RightGripper", "AllGround"});
 }
 
-void WallController::touch_left_hand(const Eigen::Vector3d & position)
+void WallController::position_left_hand()
 {
   if(!leftGripperTask) return;
 
-  sva::PTransformd targetPose(Eigen::Matrix3d::Identity(), position);
-  leftGripperTask->target(position);
+  leftGripperTask->target(leftGripperPose);
   solver().addTask(leftGripperTask);
+}
 
+
+void WallController::touch_right_hand()
+{
+  addContact({robot().name(), "ground", "RightGripper", "AllGround"});
+}
+
+void WallController::touch_left_hand()
+{
   addContact({robot().name(), "ground", "LeftGripper", "AllGround"});
 }
 
@@ -91,35 +113,73 @@ void WallController::reset(const mc_control::ControllerResetData & reset_data)
   rightGripperTask = std::make_shared<mc_tasks::TransformTask>("RightGripper", robots(), 0, 5.0, 500.0);
   leftGripperTask = std::make_shared<mc_tasks::TransformTask>("LeftGripper", robots(), 0, 5.0, 500.0);
 
+  // gui()->addElement(
+  //   {"WallController"},
+  //   mc_rtc::gui::Transform("Right Gripper Pose",
+  //     [this]() { return sva::PTransformd{rightGripperPos}; },
+  //     [this](const sva::PTransformd & pose) {
+  //       rightGripperPos = pose.translation();
+  //     })
+  // );
+  
+  // gui()->addElement(
+  //   {"WallController"},
+  //   mc_rtc::gui::Transform("Left Gripper Pose",
+  //     [this]() { return sva::PTransformd{leftGripperPos}; },
+  //     [this](const sva::PTransformd & pose) {
+  //       leftGripperPos = pose.translation();
+  //     })
+  // );
   gui()->addElement(
     {"WallController"},
-    mc_rtc::gui::ArrayInput("Right Gripper Position", {"x", "y", "z"},
-      [this]() { return rightGripperPos; },
-      [this](const Eigen::Vector3d & pos) { rightGripperPos = pos; })
-    
+    mc_rtc::gui::Transform("Right Gripper Pose",
+      [this]() { return rightGripperPose; },
+      [this](const sva::PTransformd & pose) {
+        rightGripperPose = pose;
+      })
   );
   
   gui()->addElement(
     {"WallController"},
-    mc_rtc::gui::ArrayInput("Left Gripper Position", {"x", "y", "z"},
-      [this]() { return leftGripperPos; },
-      [this](const Eigen::Vector3d & pos) { leftGripperPos = pos; })
-    
+    mc_rtc::gui::Transform("Left Gripper Pose",
+      [this]() { return leftGripperPose; },
+      [this](const sva::PTransformd & pose) {
+        leftGripperPose = pose;
+      })
   );
   
+
+  
+  
+  gui()->addElement(
+    {"WallController"},
+    mc_rtc::gui::Button("Position Right Hand", [this]() {
+      position_right_hand();
+      mc_rtc::log::info("[HAND] Right hand positioned: {}", rightGripperPose.translation().transpose());
+    })
+  );
+  
+  gui()->addElement(
+    {"WallController"},
+    mc_rtc::gui::Button("Position Left Hand", [this]() {
+      position_left_hand();
+      mc_rtc::log::info("[HAND] Left hand contact positioned: {}", leftGripperPose.translation().transpose());
+    })
+  );
+
   gui()->addElement(
     {"WallController"},
     mc_rtc::gui::Button("Add Right Hand Contact", [this]() {
-      touch_right_hand(rightGripperPos);
-      mc_rtc::log::info("[HAND] Right hand contact added at: {}", rightGripperPos.transpose());
+      touch_right_hand();
+      mc_rtc::log::info("[HAND] Right hand contact added");
     })
   );
   
   gui()->addElement(
     {"WallController"},
     mc_rtc::gui::Button("Add Left Hand Contact", [this]() {
-      touch_left_hand(leftGripperPos);
-      mc_rtc::log::info("[HAND] Left hand contact added at: {}", leftGripperPos.transpose());
+      touch_left_hand();
+      mc_rtc::log::info("[HAND] Left hand contact added");
     })
   );
   
