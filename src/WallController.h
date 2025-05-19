@@ -4,6 +4,10 @@
 #include <mc_tasks/CoMTask.h>
 #include <mc_tasks/EndEffectorTask.h>
 #include <mc_tasks/TransformTask.h>
+#include <mc_solver/ContactConstraint.h>
+
+
+
 
 
 
@@ -32,7 +36,7 @@ struct WallController_DLLAPI WallController : public mc_control::MCController
   void touch_left_hand();
   void remove_right_hand();
   void remove_left_hand();
-
+  void monitorContactForce(const std::string & contactName, double muThreshold, double fmax, double fmin);
 
   private:
     mc_rtc::Configuration config_;
@@ -45,6 +49,7 @@ struct WallController_DLLAPI WallController : public mc_control::MCController
     bool comDown = true;
 
     std::shared_ptr<mc_tasks::EndEffectorTask> efTask;
+
 
     std::shared_ptr<mc_tasks::TransformTask> rightGripperTask;
     std::shared_ptr<mc_tasks::TransformTask> leftGripperTask;
@@ -61,5 +66,14 @@ struct WallController_DLLAPI WallController : public mc_control::MCController
 
     sva::PTransformd rightGripperPose = sva::PTransformd::Identity();
     sva::PTransformd leftGripperPose = sva::PTransformd::Identity();
+
+    sva::ForceVecd wrench = robot().surfaceWrench("RightGripper");
+
+    // Extract force (first 3 components) and torque (last 3)
+    Eigen::Vector3d force = wrench.force();   // Newtons
+    Eigen::Vector3d torque = wrench.couple(); // Nm
+
+    
+
     
 };
