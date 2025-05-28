@@ -73,6 +73,9 @@ struct WallController_DLLAPI WallController : public mc_control::MCController
     Eigen::Vector3d force = wrench.force();   // Newtons
     Eigen::Vector3d torque = wrench.couple(); // Nm
 
+    bool checkContactFlag = false;
+
+
     
 
     

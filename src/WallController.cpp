@@ -30,33 +30,27 @@ bool WallController::run()
 {
   bool success = mc_control::MCController::run();
 
+  if(checkContactFlag)
+{
+  std::vector<std::string> contactNames;
+
   for(const auto & contact : contacts())
+  {
+    const auto & sName = contact.r1Surface;
+    if(robot().hasSurface(sName))
     {
-      const auto & sName = contact.r1Surface;
-      // Check if the robot owns this surface
-      if(robot().hasSurface(sName))
-      {
-
-        if(sName == "LeftFoot"){
-          monitorContactForce("LeftFoot", 0.5, 1000.0, 100.0);
-        }
-        if(sName == "RightFoot"){
-          monitorContactForce("RightFoot", 0.5, 1000.0, 100.0);
-
-        }
-        if(sName == "LeftGripper"){
-          monitorContactForce("LeftGripper", 0.5, 2000.0, 10.0);
-
-        }
-        if(sName == "RightGripper"){
-          monitorContactForce("RightGripper", 0.5, 2000.0, 10.0);
-
-        }
-        
-      }
+      contactNames.push_back(sName);
     }
-  
-  
+  }
+
+  for(const auto & name : contactNames)
+  {
+    if(name == "RightGripper") monitorContactForce("RightGripper", 1, 500.0, 10.0);
+    if(name == "LeftGripper")  monitorContactForce("LeftGripper",  1, 2000.0, 10.0);
+    if(name == "RightFoot")    monitorContactForce("RightFoot",    0.7, 500.0, 100.0);
+    if(name == "LeftFoot")     monitorContactForce("LeftFoot",     0.7, 500.0, 100.0);
+  }
+}
 
   return success;
 }
@@ -90,7 +84,8 @@ void WallController::monitorContactForce(const std::string & contactName, double
   }
 
   // Remove contact if force direction is pulling
-  if(force.z() < 0)
+  if((force.z() < 0 && (contactName == "RightFoot" || contactName == "LeftFoot")) ||
+   (force.z() > 0 && (contactName == "RightGripper" || contactName == "LeftGripper")))
   {
     mc_rtc::log::warning("[{}] Removing contact due to negative Z force: {}", contactName, force.z());
     removeContact({robot().name(), "ground", contactName, "AllGround"});
@@ -99,12 +94,14 @@ void WallController::monitorContactForce(const std::string & contactName, double
 
   // Compute effective friction
   double mu = std::sqrt(force.x() * force.x() + force.y() * force.y()) / std::abs(force.z());
+  mc_rtc::log::info("[{}] Removing contact due to excessive μ = {:.2f} (threshold = {:.2f})", contactName, mu, muThreshold);
 
-  if(mu > muThreshold)
-  {
-    mc_rtc::log::warning("[{}] Removing contact due to excessive μ = {:.2f} (threshold = {:.2f})", contactName, mu, muThreshold);
-    removeContact({robot().name(), "ground", contactName, "AllGround"});
-  }
+  // if(mu > muThreshold)
+  // {
+  //   mc_rtc::log::warning("[{}] Removing contact due to excessive μ = {:.2f} (threshold = {:.2f})", contactName, mu, muThreshold);
+  //   removeContact({robot().name(), "ground", contactName, "AllGround"});
+  //   return;
+  // }
 }
 
 void WallController::switch_com_target()
@@ -143,7 +140,6 @@ void WallController::touch_left_hand()
 
 void WallController::remove_right_hand()
 {
-  solver().removeTask(rightGripperTask);
   removeContact({robot().name(), "ground", "RightGripper", "AllGround"});
 }
 
@@ -202,6 +198,7 @@ void WallController::reset(const mc_control::ControllerResetData & reset_data)
     {"WallController"},
     mc_rtc::gui::Button("Add Right Hand Contact", [this]() {
       touch_right_hand();
+      solver().removeTask(rightGripperTask);
       mc_rtc::log::info("[HAND] Right hand contact added");
     })
   );
@@ -248,10 +245,14 @@ void WallController::reset(const mc_control::ControllerResetData & reset_data)
         Eigen::Vector3d pos = pose.translation();
         Eigen::Matrix3d rot = pose.rotation();
         Eigen::Vector3d euler = rot.eulerAngles(0, 1, 2); // XYZ Euler
+        Eigen::Quaterniond quat(pose.rotation());
+
       
         mc_rtc::log::info("Contact Surface: {}", sName);
         mc_rtc::log::info("  ↳ Position (x, y, z): {}", pos.transpose());
         mc_rtc::log::info("  ↳ Orientation (Euler XYZ, rad): {}", euler.transpose());
+        mc_rtc::log::info("  ↳ Quaternion (qw, qx, qy, qz): {} {} {} {}",
+                          quat.w(), quat.x(), quat.y(), quat.z());
       }
     }})
 
@@ -262,7 +263,7 @@ void WallController::reset(const mc_control::ControllerResetData & reset_data)
   {"WallController"},
   mc_rtc::gui::Button("Log LeftFoot QP Force", [this]()
   {
-    auto desiredContactName = "LeftFoot";
+    auto desiredContactName = "RightGripper";
    sva::ForceVecd wrenchAtContact;
    
    for(const auto & contact : solver().contacts())
@@ -290,6 +291,25 @@ void WallController::reset(const mc_control::ControllerResetData & reset_data)
    })
    
   );
+
+  gui()->addElement(
+  {"WallController"},
+  mc_rtc::gui::Button("Run Contact Force Check", [this]()
+  {
+    checkContactFlag = true;
+    mc_rtc::log::success("Started contact force monitoring.");
+  })
+);
+
+gui()->addElement(
+  {"WallController"},
+  mc_rtc::gui::Button("Stop Contact Force Check", [this]()
+  {
+    checkContactFlag = false;
+    mc_rtc::log::success("Stop contact force monitoring.");
+  })
+);
+
 
   comTask->reset();
   comZero = comTask->com();
