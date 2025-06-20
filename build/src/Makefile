@@ -209,6 +209,390 @@ WallController.cpp.s:
 	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/WallController.cpp.s
 .PHONY : WallController.cpp.s
 
+polytope/edge.o: polytope/edge.cpp.o
+.PHONY : polytope/edge.o
+
+# target to build an object file
+polytope/edge.cpp.o:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/polytope/edge.cpp.o
+.PHONY : polytope/edge.cpp.o
+
+polytope/edge.i: polytope/edge.cpp.i
+.PHONY : polytope/edge.i
+
+# target to preprocess a source file
+polytope/edge.cpp.i:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/polytope/edge.cpp.i
+.PHONY : polytope/edge.cpp.i
+
+polytope/edge.s: polytope/edge.cpp.s
+.PHONY : polytope/edge.s
+
+# target to generate assembly for a file
+polytope/edge.cpp.s:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/polytope/edge.cpp.s
+.PHONY : polytope/edge.cpp.s
+
+polytope/face.o: polytope/face.cpp.o
+.PHONY : polytope/face.o
+
+# target to build an object file
+polytope/face.cpp.o:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/polytope/face.cpp.o
+.PHONY : polytope/face.cpp.o
+
+polytope/face.i: polytope/face.cpp.i
+.PHONY : polytope/face.i
+
+# target to preprocess a source file
+polytope/face.cpp.i:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/polytope/face.cpp.i
+.PHONY : polytope/face.cpp.i
+
+polytope/face.s: polytope/face.cpp.s
+.PHONY : polytope/face.s
+
+# target to generate assembly for a file
+polytope/face.cpp.s:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/polytope/face.cpp.s
+.PHONY : polytope/face.cpp.s
+
+polytope/outeredge.o: polytope/outeredge.cpp.o
+.PHONY : polytope/outeredge.o
+
+# target to build an object file
+polytope/outeredge.cpp.o:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/polytope/outeredge.cpp.o
+.PHONY : polytope/outeredge.cpp.o
+
+polytope/outeredge.i: polytope/outeredge.cpp.i
+.PHONY : polytope/outeredge.i
+
+# target to preprocess a source file
+polytope/outeredge.cpp.i:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/polytope/outeredge.cpp.i
+.PHONY : polytope/outeredge.cpp.i
+
+polytope/outeredge.s: polytope/outeredge.cpp.s
+.PHONY : polytope/outeredge.s
+
+# target to generate assembly for a file
+polytope/outeredge.cpp.s:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/polytope/outeredge.cpp.s
+.PHONY : polytope/outeredge.cpp.s
+
+polytope/outerface.o: polytope/outerface.cpp.o
+.PHONY : polytope/outerface.o
+
+# target to build an object file
+polytope/outerface.cpp.o:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/polytope/outerface.cpp.o
+.PHONY : polytope/outerface.cpp.o
+
+polytope/outerface.i: polytope/outerface.cpp.i
+.PHONY : polytope/outerface.i
+
+# target to preprocess a source file
+polytope/outerface.cpp.i:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/polytope/outerface.cpp.i
+.PHONY : polytope/outerface.cpp.i
+
+polytope/outerface.s: polytope/outerface.cpp.s
+.PHONY : polytope/outerface.s
+
+# target to generate assembly for a file
+polytope/outerface.cpp.s:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/polytope/outerface.cpp.s
+.PHONY : polytope/outerface.cpp.s
+
+polytope/outervertex.o: polytope/outervertex.cpp.o
+.PHONY : polytope/outervertex.o
+
+# target to build an object file
+polytope/outervertex.cpp.o:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/polytope/outervertex.cpp.o
+.PHONY : polytope/outervertex.cpp.o
+
+polytope/outervertex.i: polytope/outervertex.cpp.i
+.PHONY : polytope/outervertex.i
+
+# target to preprocess a source file
+polytope/outervertex.cpp.i:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/polytope/outervertex.cpp.i
+.PHONY : polytope/outervertex.cpp.i
+
+polytope/outervertex.s: polytope/outervertex.cpp.s
+.PHONY : polytope/outervertex.s
+
+# target to generate assembly for a file
+polytope/outervertex.cpp.s:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/polytope/outervertex.cpp.s
+.PHONY : polytope/outervertex.cpp.s
+
+polytope/robustStabilityPolytope.o: polytope/robustStabilityPolytope.cpp.o
+.PHONY : polytope/robustStabilityPolytope.o
+
+# target to build an object file
+polytope/robustStabilityPolytope.cpp.o:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/polytope/robustStabilityPolytope.cpp.o
+.PHONY : polytope/robustStabilityPolytope.cpp.o
+
+polytope/robustStabilityPolytope.i: polytope/robustStabilityPolytope.cpp.i
+.PHONY : polytope/robustStabilityPolytope.i
+
+# target to preprocess a source file
+polytope/robustStabilityPolytope.cpp.i:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/polytope/robustStabilityPolytope.cpp.i
+.PHONY : polytope/robustStabilityPolytope.cpp.i
+
+polytope/robustStabilityPolytope.s: polytope/robustStabilityPolytope.cpp.s
+.PHONY : polytope/robustStabilityPolytope.s
+
+# target to generate assembly for a file
+polytope/robustStabilityPolytope.cpp.s:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/polytope/robustStabilityPolytope.cpp.s
+.PHONY : polytope/robustStabilityPolytope.cpp.s
+
+polytope/stabilityPolytope.o: polytope/stabilityPolytope.cpp.o
+.PHONY : polytope/stabilityPolytope.o
+
+# target to build an object file
+polytope/stabilityPolytope.cpp.o:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/polytope/stabilityPolytope.cpp.o
+.PHONY : polytope/stabilityPolytope.cpp.o
+
+polytope/stabilityPolytope.i: polytope/stabilityPolytope.cpp.i
+.PHONY : polytope/stabilityPolytope.i
+
+# target to preprocess a source file
+polytope/stabilityPolytope.cpp.i:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/polytope/stabilityPolytope.cpp.i
+.PHONY : polytope/stabilityPolytope.cpp.i
+
+polytope/stabilityPolytope.s: polytope/stabilityPolytope.cpp.s
+.PHONY : polytope/stabilityPolytope.s
+
+# target to generate assembly for a file
+polytope/stabilityPolytope.cpp.s:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/polytope/stabilityPolytope.cpp.s
+.PHONY : polytope/stabilityPolytope.cpp.s
+
+polytope/staticPoint.o: polytope/staticPoint.cpp.o
+.PHONY : polytope/staticPoint.o
+
+# target to build an object file
+polytope/staticPoint.cpp.o:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/polytope/staticPoint.cpp.o
+.PHONY : polytope/staticPoint.cpp.o
+
+polytope/staticPoint.i: polytope/staticPoint.cpp.i
+.PHONY : polytope/staticPoint.i
+
+# target to preprocess a source file
+polytope/staticPoint.cpp.i:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/polytope/staticPoint.cpp.i
+.PHONY : polytope/staticPoint.cpp.i
+
+polytope/staticPoint.s: polytope/staticPoint.cpp.s
+.PHONY : polytope/staticPoint.s
+
+# target to generate assembly for a file
+polytope/staticPoint.cpp.s:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/polytope/staticPoint.cpp.s
+.PHONY : polytope/staticPoint.cpp.s
+
+polytope/staticStabilityPolytope.o: polytope/staticStabilityPolytope.cpp.o
+.PHONY : polytope/staticStabilityPolytope.o
+
+# target to build an object file
+polytope/staticStabilityPolytope.cpp.o:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/polytope/staticStabilityPolytope.cpp.o
+.PHONY : polytope/staticStabilityPolytope.cpp.o
+
+polytope/staticStabilityPolytope.i: polytope/staticStabilityPolytope.cpp.i
+.PHONY : polytope/staticStabilityPolytope.i
+
+# target to preprocess a source file
+polytope/staticStabilityPolytope.cpp.i:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/polytope/staticStabilityPolytope.cpp.i
+.PHONY : polytope/staticStabilityPolytope.cpp.i
+
+polytope/staticStabilityPolytope.s: polytope/staticStabilityPolytope.cpp.s
+.PHONY : polytope/staticStabilityPolytope.s
+
+# target to generate assembly for a file
+polytope/staticStabilityPolytope.cpp.s:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/polytope/staticStabilityPolytope.cpp.s
+.PHONY : polytope/staticStabilityPolytope.cpp.s
+
+polytope/vertex.o: polytope/vertex.cpp.o
+.PHONY : polytope/vertex.o
+
+# target to build an object file
+polytope/vertex.cpp.o:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/polytope/vertex.cpp.o
+.PHONY : polytope/vertex.cpp.o
+
+polytope/vertex.i: polytope/vertex.cpp.i
+.PHONY : polytope/vertex.i
+
+# target to preprocess a source file
+polytope/vertex.cpp.i:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/polytope/vertex.cpp.i
+.PHONY : polytope/vertex.cpp.i
+
+polytope/vertex.s: polytope/vertex.cpp.s
+.PHONY : polytope/vertex.s
+
+# target to generate assembly for a file
+polytope/vertex.cpp.s:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/polytope/vertex.cpp.s
+.PHONY : polytope/vertex.cpp.s
+
+problemDescriptor/contactPoints.o: problemDescriptor/contactPoints.cpp.o
+.PHONY : problemDescriptor/contactPoints.o
+
+# target to build an object file
+problemDescriptor/contactPoints.cpp.o:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/problemDescriptor/contactPoints.cpp.o
+.PHONY : problemDescriptor/contactPoints.cpp.o
+
+problemDescriptor/contactPoints.i: problemDescriptor/contactPoints.cpp.i
+.PHONY : problemDescriptor/contactPoints.i
+
+# target to preprocess a source file
+problemDescriptor/contactPoints.cpp.i:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/problemDescriptor/contactPoints.cpp.i
+.PHONY : problemDescriptor/contactPoints.cpp.i
+
+problemDescriptor/contactPoints.s: problemDescriptor/contactPoints.cpp.s
+.PHONY : problemDescriptor/contactPoints.s
+
+# target to generate assembly for a file
+problemDescriptor/contactPoints.cpp.s:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/problemDescriptor/contactPoints.cpp.s
+.PHONY : problemDescriptor/contactPoints.cpp.s
+
+problemDescriptor/contactSet.o: problemDescriptor/contactSet.cpp.o
+.PHONY : problemDescriptor/contactSet.o
+
+# target to build an object file
+problemDescriptor/contactSet.cpp.o:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/problemDescriptor/contactSet.cpp.o
+.PHONY : problemDescriptor/contactSet.cpp.o
+
+problemDescriptor/contactSet.i: problemDescriptor/contactSet.cpp.i
+.PHONY : problemDescriptor/contactSet.i
+
+# target to preprocess a source file
+problemDescriptor/contactSet.cpp.i:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/problemDescriptor/contactSet.cpp.i
+.PHONY : problemDescriptor/contactSet.cpp.i
+
+problemDescriptor/contactSet.s: problemDescriptor/contactSet.cpp.s
+.PHONY : problemDescriptor/contactSet.s
+
+# target to generate assembly for a file
+problemDescriptor/contactSet.cpp.s:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/problemDescriptor/contactSet.cpp.s
+.PHONY : problemDescriptor/contactSet.cpp.s
+
+problemDescriptor/problemDescriptor.o: problemDescriptor/problemDescriptor.cpp.o
+.PHONY : problemDescriptor/problemDescriptor.o
+
+# target to build an object file
+problemDescriptor/problemDescriptor.cpp.o:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/problemDescriptor/problemDescriptor.cpp.o
+.PHONY : problemDescriptor/problemDescriptor.cpp.o
+
+problemDescriptor/problemDescriptor.i: problemDescriptor/problemDescriptor.cpp.i
+.PHONY : problemDescriptor/problemDescriptor.i
+
+# target to preprocess a source file
+problemDescriptor/problemDescriptor.cpp.i:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/problemDescriptor/problemDescriptor.cpp.i
+.PHONY : problemDescriptor/problemDescriptor.cpp.i
+
+problemDescriptor/problemDescriptor.s: problemDescriptor/problemDescriptor.cpp.s
+.PHONY : problemDescriptor/problemDescriptor.s
+
+# target to generate assembly for a file
+problemDescriptor/problemDescriptor.cpp.s:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/problemDescriptor/problemDescriptor.cpp.s
+.PHONY : problemDescriptor/problemDescriptor.cpp.s
+
+utils/PointProjector.o: utils/PointProjector.cpp.o
+.PHONY : utils/PointProjector.o
+
+# target to build an object file
+utils/PointProjector.cpp.o:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/utils/PointProjector.cpp.o
+.PHONY : utils/PointProjector.cpp.o
+
+utils/PointProjector.i: utils/PointProjector.cpp.i
+.PHONY : utils/PointProjector.i
+
+# target to preprocess a source file
+utils/PointProjector.cpp.i:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/utils/PointProjector.cpp.i
+.PHONY : utils/PointProjector.cpp.i
+
+utils/PointProjector.s: utils/PointProjector.cpp.s
+.PHONY : utils/PointProjector.s
+
+# target to generate assembly for a file
+utils/PointProjector.cpp.s:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/utils/PointProjector.cpp.s
+.PHONY : utils/PointProjector.cpp.s
+
+wrapper/glpk_wrapper.o: wrapper/glpk_wrapper.cpp.o
+.PHONY : wrapper/glpk_wrapper.o
+
+# target to build an object file
+wrapper/glpk_wrapper.cpp.o:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/wrapper/glpk_wrapper.cpp.o
+.PHONY : wrapper/glpk_wrapper.cpp.o
+
+wrapper/glpk_wrapper.i: wrapper/glpk_wrapper.cpp.i
+.PHONY : wrapper/glpk_wrapper.i
+
+# target to preprocess a source file
+wrapper/glpk_wrapper.cpp.i:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/wrapper/glpk_wrapper.cpp.i
+.PHONY : wrapper/glpk_wrapper.cpp.i
+
+wrapper/glpk_wrapper.s: wrapper/glpk_wrapper.cpp.s
+.PHONY : wrapper/glpk_wrapper.s
+
+# target to generate assembly for a file
+wrapper/glpk_wrapper.cpp.s:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/wrapper/glpk_wrapper.cpp.s
+.PHONY : wrapper/glpk_wrapper.cpp.s
+
+wrapper/solver_wrapper.o: wrapper/solver_wrapper.cpp.o
+.PHONY : wrapper/solver_wrapper.o
+
+# target to build an object file
+wrapper/solver_wrapper.cpp.o:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/wrapper/solver_wrapper.cpp.o
+.PHONY : wrapper/solver_wrapper.cpp.o
+
+wrapper/solver_wrapper.i: wrapper/solver_wrapper.cpp.i
+.PHONY : wrapper/solver_wrapper.i
+
+# target to preprocess a source file
+wrapper/solver_wrapper.cpp.i:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/wrapper/solver_wrapper.cpp.i
+.PHONY : wrapper/solver_wrapper.cpp.i
+
+wrapper/solver_wrapper.s: wrapper/solver_wrapper.cpp.s
+.PHONY : wrapper/solver_wrapper.s
+
+# target to generate assembly for a file
+wrapper/solver_wrapper.cpp.s:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/wrapper/solver_wrapper.cpp.s
+.PHONY : wrapper/solver_wrapper.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -226,6 +610,54 @@ help:
 	@echo "... WallController.o"
 	@echo "... WallController.i"
 	@echo "... WallController.s"
+	@echo "... polytope/edge.o"
+	@echo "... polytope/edge.i"
+	@echo "... polytope/edge.s"
+	@echo "... polytope/face.o"
+	@echo "... polytope/face.i"
+	@echo "... polytope/face.s"
+	@echo "... polytope/outeredge.o"
+	@echo "... polytope/outeredge.i"
+	@echo "... polytope/outeredge.s"
+	@echo "... polytope/outerface.o"
+	@echo "... polytope/outerface.i"
+	@echo "... polytope/outerface.s"
+	@echo "... polytope/outervertex.o"
+	@echo "... polytope/outervertex.i"
+	@echo "... polytope/outervertex.s"
+	@echo "... polytope/robustStabilityPolytope.o"
+	@echo "... polytope/robustStabilityPolytope.i"
+	@echo "... polytope/robustStabilityPolytope.s"
+	@echo "... polytope/stabilityPolytope.o"
+	@echo "... polytope/stabilityPolytope.i"
+	@echo "... polytope/stabilityPolytope.s"
+	@echo "... polytope/staticPoint.o"
+	@echo "... polytope/staticPoint.i"
+	@echo "... polytope/staticPoint.s"
+	@echo "... polytope/staticStabilityPolytope.o"
+	@echo "... polytope/staticStabilityPolytope.i"
+	@echo "... polytope/staticStabilityPolytope.s"
+	@echo "... polytope/vertex.o"
+	@echo "... polytope/vertex.i"
+	@echo "... polytope/vertex.s"
+	@echo "... problemDescriptor/contactPoints.o"
+	@echo "... problemDescriptor/contactPoints.i"
+	@echo "... problemDescriptor/contactPoints.s"
+	@echo "... problemDescriptor/contactSet.o"
+	@echo "... problemDescriptor/contactSet.i"
+	@echo "... problemDescriptor/contactSet.s"
+	@echo "... problemDescriptor/problemDescriptor.o"
+	@echo "... problemDescriptor/problemDescriptor.i"
+	@echo "... problemDescriptor/problemDescriptor.s"
+	@echo "... utils/PointProjector.o"
+	@echo "... utils/PointProjector.i"
+	@echo "... utils/PointProjector.s"
+	@echo "... wrapper/glpk_wrapper.o"
+	@echo "... wrapper/glpk_wrapper.i"
+	@echo "... wrapper/glpk_wrapper.s"
+	@echo "... wrapper/solver_wrapper.o"
+	@echo "... wrapper/solver_wrapper.i"
+	@echo "... wrapper/solver_wrapper.s"
 .PHONY : help
 
 

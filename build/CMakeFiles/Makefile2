@@ -96,12 +96,12 @@ src/clean: src/CMakeFiles/WallController.dir/clean
 src/CMakeFiles/WallController.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/praveen/wall_controller/build/CMakeFiles --progress-num=1,2 "Built target WallController"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/praveen/wall_controller/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18 "Built target WallController"
 .PHONY : src/CMakeFiles/WallController.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/WallController.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/praveen/wall_controller/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/praveen/wall_controller/build/CMakeFiles 18
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/WallController.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/praveen/wall_controller/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/WallController.dir/rule

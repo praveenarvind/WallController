@@ -5,11 +5,7 @@
 #include <mc_tasks/EndEffectorTask.h>
 #include <mc_tasks/TransformTask.h>
 #include <mc_solver/ContactConstraint.h>
-
-
-
-
-
+#include <mc_filter/LowPass.h>
 
 #include "api.h"
 
@@ -24,6 +20,8 @@ struct WallController_DLLAPI WallController : public mc_control::MCController
   void switch_com_target();
 
   void touch_hand();
+
+  void updateCoM();
 
   // In WallController class (WallController.h)
 
@@ -53,6 +51,9 @@ struct WallController_DLLAPI WallController : public mc_control::MCController
 
     std::shared_ptr<mc_tasks::TransformTask> rightGripperTask;
     std::shared_ptr<mc_tasks::TransformTask> leftGripperTask;
+
+    double cutoffPeriodPolyCenter_ = 1.0;
+    mc_filter::LowPass<Eigen::Vector3d> lowPassPolyCenter_;
 
     
     bool handContactAdded = false;

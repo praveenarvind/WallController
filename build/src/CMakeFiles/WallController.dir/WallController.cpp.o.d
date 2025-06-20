@@ -1112,4 +1112,69 @@ src/CMakeFiles/WallController.dir/WallController.cpp.o: \
  /usr/local/include/mc_tasks/PositionTask.h \
  /usr/local/include/mc_tvm/PositionFunction.h \
  /usr/local/include/mc_tasks/TransformTask.h \
- /home/praveen/wall_controller/src/api.h
+ /usr/local/include/mc_filter/LowPass.h \
+ /home/praveen/wall_controller/src/api.h \
+ /home/praveen/wall_controller/include/polytope/robustStabilityPolytope.h \
+ /usr/include/eigen3/Eigen/Dense /usr/include/eigen3/Eigen/Geometry \
+ /usr/include/eigen3/Eigen/Eigenvalues \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/EigenSolver.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexEigenSolver.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
+ /home/praveen/wall_controller/include/polytope/edge.h \
+ /home/praveen/wall_controller/include/polytope/vertex.h \
+ /home/praveen/wall_controller/include/polytope/face.h \
+ /home/praveen/wall_controller/include/polytope/outervertex.h \
+ /home/praveen/wall_controller/include/polytope/outerface.h \
+ /home/praveen/wall_controller/include/polytope/outeredge.h \
+ /home/praveen/wall_controller/include/polytope/outerface.h \
+ /home/praveen/wall_controller/include/polytope/outervertex.h \
+ /home/praveen/wall_controller/include/polytope/stabilityPolytope.h \
+ /usr/include/c++/11/random /usr/include/c++/11/bits/random.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h \
+ /usr/include/c++/11/bits/random.tcc /usr/include/c++/11/numeric \
+ /usr/include/c++/11/bits/stl_numeric.h \
+ /usr/include/c++/11/pstl/glue_numeric_defs.h /usr/include/glpk.h \
+ /usr/include/tinyxml2.h \
+ /home/praveen/wall_controller/include/wrapper/glpk_wrapper.h \
+ /home/praveen/wall_controller/include/wrapper/solver_wrapper.h \
+ /home/praveen/wall_controller/include/problemDescriptor/problemDescriptor.h \
+ /home/praveen/wall_controller/include/polytope/vertex.h \
+ /home/praveen/wall_controller/include/problemDescriptor/contactSet.h \
+ /home/praveen/wall_controller/include/problemDescriptor/contactPoints.h \
+ /usr/include/c++/11/math.h \
+ /home/praveen/wall_controller/src/utils/PointProjector.h \
+ /usr/local/include/sch-core/S_Point.h \
+ /usr/local/include/sch/S_Object/S_ObjectNonNormalized.h \
+ /usr/include/boost/serialization/base_object.hpp \
+ /usr/include/boost/type_traits/is_polymorphic.hpp \
+ /usr/include/boost/serialization/access.hpp \
+ /usr/include/boost/serialization/force_include.hpp \
+ /usr/include/boost/serialization/void_cast_fwd.hpp \
+ /usr/local/include/sch/S_Object/S_ObjectNonNormalized.hxx \
+ /usr/local/include/sch-core/S_Polyhedron.h \
+ /usr/local/include/sch/S_Polyhedron/Polyhedron_algorithms.h \
+ /usr/local/include/sch/S_Polyhedron/S_PolyhedronVertex.h \
+ /usr/include/boost/noncopyable.hpp \
+ /usr/include/boost/core/noncopyable.hpp \
+ /usr/local/include/sch/core/deprecated.hh \
+ /usr/local/include/sch/S_Polyhedron/S_PolyhedronVertex.hxx \
+ /usr/include/boost/serialization/split_member.hpp \
+ /usr/local/include/sch/CD/CD_Pair.h \
+ /usr/local/include/sch/CD/CD_SimplexEnhanced.h \
+ /usr/local/include/sch/CD/CD_Simplex.h \
+ /usr/local/include/sch/CD/CD_Simplex.hxx \
+ /usr/local/include/sch/CD/CD_SimplexEnhanced.hxx \
+ /usr/local/include/sch/CD_Penetration/CD_Depth.h
