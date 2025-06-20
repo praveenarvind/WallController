@@ -83,19 +83,19 @@ src/CMakeFiles/WallController.dir/WallController.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/WallController.dir/WallController.cpp.s"
 	cd /home/praveen/wall_controller/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/praveen/wall_controller/src/WallController.cpp -o CMakeFiles/WallController.dir/WallController.cpp.s
 
-src/CMakeFiles/WallController.dir/utils/PointProjector.cpp.o: src/CMakeFiles/WallController.dir/flags.make
-src/CMakeFiles/WallController.dir/utils/PointProjector.cpp.o: ../src/utils/PointProjector.cpp
-src/CMakeFiles/WallController.dir/utils/PointProjector.cpp.o: src/CMakeFiles/WallController.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/praveen/wall_controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/WallController.dir/utils/PointProjector.cpp.o"
-	cd /home/praveen/wall_controller/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/WallController.dir/utils/PointProjector.cpp.o -MF CMakeFiles/WallController.dir/utils/PointProjector.cpp.o.d -o CMakeFiles/WallController.dir/utils/PointProjector.cpp.o -c /home/praveen/wall_controller/src/utils/PointProjector.cpp
+src/CMakeFiles/WallController.dir/PointProjector.cpp.o: src/CMakeFiles/WallController.dir/flags.make
+src/CMakeFiles/WallController.dir/PointProjector.cpp.o: ../src/PointProjector.cpp
+src/CMakeFiles/WallController.dir/PointProjector.cpp.o: src/CMakeFiles/WallController.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/praveen/wall_controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/WallController.dir/PointProjector.cpp.o"
+	cd /home/praveen/wall_controller/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/WallController.dir/PointProjector.cpp.o -MF CMakeFiles/WallController.dir/PointProjector.cpp.o.d -o CMakeFiles/WallController.dir/PointProjector.cpp.o -c /home/praveen/wall_controller/src/PointProjector.cpp
 
-src/CMakeFiles/WallController.dir/utils/PointProjector.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/WallController.dir/utils/PointProjector.cpp.i"
-	cd /home/praveen/wall_controller/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/praveen/wall_controller/src/utils/PointProjector.cpp > CMakeFiles/WallController.dir/utils/PointProjector.cpp.i
+src/CMakeFiles/WallController.dir/PointProjector.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/WallController.dir/PointProjector.cpp.i"
+	cd /home/praveen/wall_controller/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/praveen/wall_controller/src/PointProjector.cpp > CMakeFiles/WallController.dir/PointProjector.cpp.i
 
-src/CMakeFiles/WallController.dir/utils/PointProjector.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/WallController.dir/utils/PointProjector.cpp.s"
-	cd /home/praveen/wall_controller/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/praveen/wall_controller/src/utils/PointProjector.cpp -o CMakeFiles/WallController.dir/utils/PointProjector.cpp.s
+src/CMakeFiles/WallController.dir/PointProjector.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/WallController.dir/PointProjector.cpp.s"
+	cd /home/praveen/wall_controller/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/praveen/wall_controller/src/PointProjector.cpp -o CMakeFiles/WallController.dir/PointProjector.cpp.s
 
 src/CMakeFiles/WallController.dir/polytope/edge.cpp.o: src/CMakeFiles/WallController.dir/flags.make
 src/CMakeFiles/WallController.dir/polytope/edge.cpp.o: ../src/polytope/edge.cpp
@@ -310,7 +310,7 @@ src/CMakeFiles/WallController.dir/wrapper/solver_wrapper.cpp.s: cmake_force
 # Object files for target WallController
 WallController_OBJECTS = \
 "CMakeFiles/WallController.dir/WallController.cpp.o" \
-"CMakeFiles/WallController.dir/utils/PointProjector.cpp.o" \
+"CMakeFiles/WallController.dir/PointProjector.cpp.o" \
 "CMakeFiles/WallController.dir/polytope/edge.cpp.o" \
 "CMakeFiles/WallController.dir/polytope/face.cpp.o" \
 "CMakeFiles/WallController.dir/polytope/outeredge.cpp.o" \
@@ -331,7 +331,7 @@ WallController_OBJECTS = \
 WallController_EXTERNAL_OBJECTS =
 
 src/WallController.so: src/CMakeFiles/WallController.dir/WallController.cpp.o
-src/WallController.so: src/CMakeFiles/WallController.dir/utils/PointProjector.cpp.o
+src/WallController.so: src/CMakeFiles/WallController.dir/PointProjector.cpp.o
 src/WallController.so: src/CMakeFiles/WallController.dir/polytope/edge.cpp.o
 src/WallController.so: src/CMakeFiles/WallController.dir/polytope/face.cpp.o
 src/WallController.so: src/CMakeFiles/WallController.dir/polytope/outeredge.cpp.o

@@ -185,6 +185,30 @@ WallController/fast:
 	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/build
 .PHONY : WallController/fast
 
+PointProjector.o: PointProjector.cpp.o
+.PHONY : PointProjector.o
+
+# target to build an object file
+PointProjector.cpp.o:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/PointProjector.cpp.o
+.PHONY : PointProjector.cpp.o
+
+PointProjector.i: PointProjector.cpp.i
+.PHONY : PointProjector.i
+
+# target to preprocess a source file
+PointProjector.cpp.i:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/PointProjector.cpp.i
+.PHONY : PointProjector.cpp.i
+
+PointProjector.s: PointProjector.cpp.s
+.PHONY : PointProjector.s
+
+# target to generate assembly for a file
+PointProjector.cpp.s:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/PointProjector.cpp.s
+.PHONY : PointProjector.cpp.s
+
 WallController.o: WallController.cpp.o
 .PHONY : WallController.o
 
@@ -521,30 +545,6 @@ problemDescriptor/problemDescriptor.cpp.s:
 	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/problemDescriptor/problemDescriptor.cpp.s
 .PHONY : problemDescriptor/problemDescriptor.cpp.s
 
-utils/PointProjector.o: utils/PointProjector.cpp.o
-.PHONY : utils/PointProjector.o
-
-# target to build an object file
-utils/PointProjector.cpp.o:
-	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/utils/PointProjector.cpp.o
-.PHONY : utils/PointProjector.cpp.o
-
-utils/PointProjector.i: utils/PointProjector.cpp.i
-.PHONY : utils/PointProjector.i
-
-# target to preprocess a source file
-utils/PointProjector.cpp.i:
-	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/utils/PointProjector.cpp.i
-.PHONY : utils/PointProjector.cpp.i
-
-utils/PointProjector.s: utils/PointProjector.cpp.s
-.PHONY : utils/PointProjector.s
-
-# target to generate assembly for a file
-utils/PointProjector.cpp.s:
-	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/utils/PointProjector.cpp.s
-.PHONY : utils/PointProjector.cpp.s
-
 wrapper/glpk_wrapper.o: wrapper/glpk_wrapper.cpp.o
 .PHONY : wrapper/glpk_wrapper.o
 
@@ -607,6 +607,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... WallController"
+	@echo "... PointProjector.o"
+	@echo "... PointProjector.i"
+	@echo "... PointProjector.s"
 	@echo "... WallController.o"
 	@echo "... WallController.i"
 	@echo "... WallController.s"
@@ -649,9 +652,6 @@ help:
 	@echo "... problemDescriptor/problemDescriptor.o"
 	@echo "... problemDescriptor/problemDescriptor.i"
 	@echo "... problemDescriptor/problemDescriptor.s"
-	@echo "... utils/PointProjector.o"
-	@echo "... utils/PointProjector.i"
-	@echo "... utils/PointProjector.s"
 	@echo "... wrapper/glpk_wrapper.o"
 	@echo "... wrapper/glpk_wrapper.i"
 	@echo "... wrapper/glpk_wrapper.s"

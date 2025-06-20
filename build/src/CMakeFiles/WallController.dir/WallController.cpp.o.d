@@ -1155,7 +1155,7 @@ src/CMakeFiles/WallController.dir/WallController.cpp.o: \
  /home/praveen/wall_controller/include/problemDescriptor/contactSet.h \
  /home/praveen/wall_controller/include/problemDescriptor/contactPoints.h \
  /usr/include/c++/11/math.h \
- /home/praveen/wall_controller/src/utils/PointProjector.h \
+ /home/praveen/wall_controller/src/PointProjector.h \
  /usr/local/include/sch-core/S_Point.h \
  /usr/local/include/sch/S_Object/S_ObjectNonNormalized.h \
  /usr/include/boost/serialization/base_object.hpp \

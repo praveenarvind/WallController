@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/WallController.dir/PointProjector.cpp.o"
+  "CMakeFiles/WallController.dir/PointProjector.cpp.o.d"
   "CMakeFiles/WallController.dir/WallController.cpp.o"
   "CMakeFiles/WallController.dir/WallController.cpp.o.d"
   "CMakeFiles/WallController.dir/polytope/edge.cpp.o"
@@ -27,8 +29,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/WallController.dir/problemDescriptor/contactSet.cpp.o.d"
   "CMakeFiles/WallController.dir/problemDescriptor/problemDescriptor.cpp.o"
   "CMakeFiles/WallController.dir/problemDescriptor/problemDescriptor.cpp.o.d"
-  "CMakeFiles/WallController.dir/utils/PointProjector.cpp.o"
-  "CMakeFiles/WallController.dir/utils/PointProjector.cpp.o.d"
   "CMakeFiles/WallController.dir/wrapper/glpk_wrapper.cpp.o"
   "CMakeFiles/WallController.dir/wrapper/glpk_wrapper.cpp.o.d"
   "CMakeFiles/WallController.dir/wrapper/solver_wrapper.cpp.o"

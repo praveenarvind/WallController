@@ -3,7 +3,7 @@
 #include "problemDescriptor/problemDescriptor.h"
 #include "wrapper/glpk_wrapper.h"
 #include "problemDescriptor/contactSet.h"
-#include "utils/PointProjector.h"
+#include "PointProjector.h"
 
 #include <mc_solver/QPSolver.h>
 #include <mc_rbdyn/Contact.h>
