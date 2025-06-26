@@ -209,6 +209,30 @@ PointProjector.cpp.s:
 	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/PointProjector.cpp.s
 .PHONY : PointProjector.cpp.s
 
+StabilityCoM.o: StabilityCoM.cpp.o
+.PHONY : StabilityCoM.o
+
+# target to build an object file
+StabilityCoM.cpp.o:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/StabilityCoM.cpp.o
+.PHONY : StabilityCoM.cpp.o
+
+StabilityCoM.i: StabilityCoM.cpp.i
+.PHONY : StabilityCoM.i
+
+# target to preprocess a source file
+StabilityCoM.cpp.i:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/StabilityCoM.cpp.i
+.PHONY : StabilityCoM.cpp.i
+
+StabilityCoM.s: StabilityCoM.cpp.s
+.PHONY : StabilityCoM.s
+
+# target to generate assembly for a file
+StabilityCoM.cpp.s:
+	cd /home/praveen/wall_controller/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/WallController.dir/build.make src/CMakeFiles/WallController.dir/StabilityCoM.cpp.s
+.PHONY : StabilityCoM.cpp.s
+
 WallController.o: WallController.cpp.o
 .PHONY : WallController.o
 
@@ -610,6 +634,9 @@ help:
 	@echo "... PointProjector.o"
 	@echo "... PointProjector.i"
 	@echo "... PointProjector.s"
+	@echo "... StabilityCoM.o"
+	@echo "... StabilityCoM.i"
+	@echo "... StabilityCoM.s"
 	@echo "... WallController.o"
 	@echo "... WallController.i"
 	@echo "... WallController.s"

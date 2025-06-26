@@ -1113,8 +1113,8 @@ src/CMakeFiles/WallController.dir/WallController.cpp.o: \
  /usr/local/include/mc_tvm/PositionFunction.h \
  /usr/local/include/mc_tasks/TransformTask.h \
  /usr/local/include/mc_filter/LowPass.h \
- /home/praveen/wall_controller/src/api.h \
- /home/praveen/wall_controller/include/polytope/robustStabilityPolytope.h \
+ /home/praveen/wall_controller/src/StabilityCoM.h \
+ /home/praveen/wall_controller/include/problemDescriptor/contactSet.h \
  /usr/include/eigen3/Eigen/Dense /usr/include/eigen3/Eigen/Geometry \
  /usr/include/eigen3/Eigen/Eigenvalues \
  /usr/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h \
@@ -1133,6 +1133,11 @@ src/CMakeFiles/WallController.dir/WallController.cpp.o: \
  /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
  /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
  /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
+ /usr/include/tinyxml2.h \
+ /home/praveen/wall_controller/include/problemDescriptor/contactPoints.h \
+ /usr/include/c++/11/math.h \
+ /home/praveen/wall_controller/include/problemDescriptor/problemDescriptor.h \
+ /home/praveen/wall_controller/include/polytope/robustStabilityPolytope.h \
  /home/praveen/wall_controller/include/polytope/edge.h \
  /home/praveen/wall_controller/include/polytope/vertex.h \
  /home/praveen/wall_controller/include/polytope/face.h \
@@ -1147,14 +1152,9 @@ src/CMakeFiles/WallController.dir/WallController.cpp.o: \
  /usr/include/c++/11/bits/random.tcc /usr/include/c++/11/numeric \
  /usr/include/c++/11/bits/stl_numeric.h \
  /usr/include/c++/11/pstl/glue_numeric_defs.h /usr/include/glpk.h \
- /usr/include/tinyxml2.h \
  /home/praveen/wall_controller/include/wrapper/glpk_wrapper.h \
  /home/praveen/wall_controller/include/wrapper/solver_wrapper.h \
- /home/praveen/wall_controller/include/problemDescriptor/problemDescriptor.h \
  /home/praveen/wall_controller/include/polytope/vertex.h \
- /home/praveen/wall_controller/include/problemDescriptor/contactSet.h \
- /home/praveen/wall_controller/include/problemDescriptor/contactPoints.h \
- /usr/include/c++/11/math.h \
  /home/praveen/wall_controller/src/PointProjector.h \
  /usr/local/include/sch-core/S_Point.h \
  /usr/local/include/sch/S_Object/S_ObjectNonNormalized.h \
@@ -1177,4 +1177,5 @@ src/CMakeFiles/WallController.dir/WallController.cpp.o: \
  /usr/local/include/sch/CD/CD_Simplex.h \
  /usr/local/include/sch/CD/CD_Simplex.hxx \
  /usr/local/include/sch/CD/CD_SimplexEnhanced.hxx \
- /usr/local/include/sch/CD_Penetration/CD_Depth.h
+ /usr/local/include/sch/CD_Penetration/CD_Depth.h \
+ /home/praveen/wall_controller/src/api.h

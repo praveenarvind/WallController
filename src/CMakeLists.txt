@@ -1,11 +1,13 @@
 set(controller_SRC
   WallController.cpp
   PointProjector.cpp
+  StabilityCoM.cpp
 )
 
 set(controller_HDR
   WallController.h
   PointProjector.h
+  StabilityCoM.h
 )
 
 # ====== Add StabiliPlus headers ======

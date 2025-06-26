@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/praveen/wall_controller/src/PointProjector.cpp" "src/CMakeFiles/WallController.dir/PointProjector.cpp.o" "gcc" "src/CMakeFiles/WallController.dir/PointProjector.cpp.o.d"
+  "/home/praveen/wall_controller/src/StabilityCoM.cpp" "src/CMakeFiles/WallController.dir/StabilityCoM.cpp.o" "gcc" "src/CMakeFiles/WallController.dir/StabilityCoM.cpp.o.d"
   "/home/praveen/wall_controller/src/WallController.cpp" "src/CMakeFiles/WallController.dir/WallController.cpp.o" "gcc" "src/CMakeFiles/WallController.dir/WallController.cpp.o.d"
   "/home/praveen/wall_controller/src/polytope/edge.cpp" "src/CMakeFiles/WallController.dir/polytope/edge.cpp.o" "gcc" "src/CMakeFiles/WallController.dir/polytope/edge.cpp.o.d"
   "/home/praveen/wall_controller/src/polytope/face.cpp" "src/CMakeFiles/WallController.dir/polytope/face.cpp.o" "gcc" "src/CMakeFiles/WallController.dir/polytope/face.cpp.o.d"

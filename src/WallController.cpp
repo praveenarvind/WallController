@@ -10,7 +10,7 @@
 
 
 WallController::WallController(mc_rbdyn::RobotModulePtr rm, double dt, const mc_rtc::Configuration & config)
-: mc_control::MCController(rm, dt), controllerDt(dt), lowPassPolyCenter_(dt, cutoffPeriodPolyCenter_)
+: mc_control::MCController(rm, dt), controllerDt(dt), lowPassPolyCenter_(dt, cutoffPeriodPolyCenter_), stabilityCoM_(dt)
 {
   jointIndex = robot().jointIndexByName(jointName);
   config_.load(config);
@@ -175,162 +175,10 @@ void WallController::remove_left_hand()
 }
 
 void WallController::updateCoM(){
-mc_rtc::log::info("==== Starting Static Polytope Computation ====");
-
-      // 1. Create ContactSet just once
-      auto pd = std::make_shared<ContactSet>(false);
-
-      // 2. Set robot mass and friction sides
-      double robot_mass = robot().mass();
-      mc_rtc::log::info("Robot mass: {}", robot_mass);
-      pd->mass(robot_mass);
-      pd->setFrictionSides(6);
-
-      // 3. Add contacts from robot
-      size_t n_contacts = contacts().size();
-      mc_rtc::log::info("contacts().size() = {}", n_contacts);
-
-      int ptCount = 1;
-      int n_contacts_added = 0;
-      for(const auto & contact : contacts())
-      {
-        const auto & sName = contact.r1Surface;
-        mc_rtc::log::info("Inspecting contact #{}: surface name = {}", ptCount, sName);
-
-        if(robot().hasSurface(sName))
-        {
-          auto pose = robot().surfacePose(sName);
-          Eigen::Matrix4d homTrans = Eigen::Matrix4d::Identity();
-          homTrans.block<3,3>(0,0) = pose.rotation();
-          homTrans.block<3,1>(0,3) = pose.translation();
-
-          double friction = 1.0;
-          double fmax = 350.0;
-          double fmin = 100.0;
-
-          std::string ptName = "contact_" + std::to_string(ptCount);
-
-            if(sName == "RightGripper") // gripper
-            {
-              friction = 1.0;
-              fmax = 150.0;
-              fmin = 10.0;
-            }
-            else if(sName == "LeftGripper")
-            {
-              friction = 1.0;
-              fmax = 2000.0;
-              fmin = 10.0;
-            }
-            else if(sName == "RightFoot")
-            {
-              friction = 0.7;
-              fmax = 350.0;
-              fmin = 100.0;
-            }
-            else if(sName == "LeftFoot")
-            {
-              friction = 0.7;
-              fmax = 350.0;
-              fmin = 100.0;
-            }
-
-
-          pd->addContact(ptName, homTrans, friction, fmax, fmin);
-          mc_rtc::log::success("Added contact {}: surface={}, pose=[{:.3f}, {:.3f}, {:.3f}]", 
-                               ptName, sName, pose.translation().x(), pose.translation().y(), pose.translation().z());
-          ++n_contacts_added;
-          ++ptCount;
-        }
-        else
-        {
-          mc_rtc::log::warning("Robot does NOT have surface: {} (skipping)", sName);
-        }
-        
-      }
-
-      if(n_contacts_added == 0)
-      {
-        mc_rtc::log::error("No contacts were added to the ContactSet! Static polytope will be empty.");
-        return; // Early exit to avoid computing empty polytope
-      }
-      else
-      {
-        mc_rtc::log::success("Total contacts added to ContactSet: {}", n_contacts_added);
-      }
-
-      // 4. Add CoM accelerations
-      mc_rtc::log::info("Adding CoM accelerations...");
-      std::vector<Eigen::Vector3d> acc_list = {
-        {0.0, 0.0, -9.81},
-        {0.6, 0.0, -9.81},
-        {0.0, 0.6, -9.81},
-        {-0.6, 0.0, -9.81},
-        {0.0, -0.6, -9.81}
-      };
-      for(const auto& a : acc_list)
-      {
-        pd->addCoMAcc(a);
-        mc_rtc::log::info("Added CoM acceleration: [{:.3f}, {:.3f}, {:.3f}]", a.x(), a.y(), a.z());
-      }
-
-      // 5. Create and compute the static polytope
-      mc_rtc::log::info("Creating StaticStabilityPolytope...");
-      double maxError = 1e-4;
-
-      RobustStabilityPolytope polytope(pd, 20, maxError, ::GLPK);
-
-      polytope.initSolver();
-      bool ok = polytope.computeProjectionStabilityPolyhedron();
-      polytope.endSolver();
-
-      if(!ok){
-        mc_rtc::log::error("Comp Stab Fail");
-        return;
-      }
-
-        Eigen::Vector3d bary = polytope.baryPoint();
-  // Optional: smooth it (up to you)
-  lowPassPolyCenter_.update(bary);
-  bary = lowPassPolyCenter_.eval();
-
-  // 4b) Blend with desiredCoM_
-  double blendCoef = 0.5; // tune this as you like
-  Eigen::Vector3d filteredCoM = (1.0 - blendCoef) * robot().com() + blendCoef * bary;
-
-  // 4c) Adjust safe Z
-  double nominalZ = robot().com().z(); // or any nominal you trust
-  filteredCoM.z() = std::max(filteredCoM.z(), nominalZ);
-
-  // 4d) Adjust safe X (optional: use midpoint of feet)
-  Eigen::Vector3d leftFoot = robot().frame("LeftFoot").position().translation();
-  Eigen::Vector3d rightFoot = robot().frame("RightFoot").position().translation();
-  double midX = 0.5 * (leftFoot.x() + rightFoot.x());
-  filteredCoM.x() = midX;
-
-  // === 5) Project this filtered CoM ===
-  PointProjector projector;
-  projector.setPolytope(std::make_shared<RobustStabilityPolytope>(polytope));
-  projector.setPoint(filteredCoM);
-  projector.project();
-  Eigen::Vector3d safeCoM = projector.projectedPoint();
-
-  // === 6) Send to CoMTask ===
-  comTask->com(safeCoM);
-
-      // Eigen::Vector3d desiredCoM = desiredCoM;
-
-      // PointProjector projector;
-      // projector.setPolytope(std::make_shared<RobustStabilityPolytope>(polytope)); // wrap in shared_ptr
-      // projector.setPoint(desiredCoM);
-      // projector.project();
-
-      // Eigen::Vector3d safeCoM = projector.projectedPoint();
-
-      // //datastore().call<void, const Eigen::Vector3d &>("RobotStabilizer::setCoMTarget", safeCoM);
-      // comTask->com(safeCoM);
-      // mc_rtc::log::info("[WallController] Desired CoM projected to safe CoM: {} -> {}", desiredCoM.transpose(), safeCoM.transpose());
-
+    mc_rtc::log::info("=== Updating StabilityCoM ===");
+    stabilityCoM_.buildContactSet(robot());
+    stabilityCoM_.addDefaultCoMAccelerations();
+    stabilityCoM_.computeSafeCoM(robot(), *comTask);
 }
 
 

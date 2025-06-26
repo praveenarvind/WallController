@@ -6,6 +6,7 @@
 #include <mc_tasks/TransformTask.h>
 #include <mc_solver/ContactConstraint.h>
 #include <mc_filter/LowPass.h>
+#include "StabilityCoM.h"
 
 #include "api.h"
 
@@ -76,8 +77,5 @@ struct WallController_DLLAPI WallController : public mc_control::MCController
 
     bool checkContactFlag = false;
 
-
-    
-
-    
+    StabilityCoM stabilityCoM_{0.0};
 };

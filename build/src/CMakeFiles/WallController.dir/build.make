@@ -97,10 +97,24 @@ src/CMakeFiles/WallController.dir/PointProjector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/WallController.dir/PointProjector.cpp.s"
 	cd /home/praveen/wall_controller/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/praveen/wall_controller/src/PointProjector.cpp -o CMakeFiles/WallController.dir/PointProjector.cpp.s
 
+src/CMakeFiles/WallController.dir/StabilityCoM.cpp.o: src/CMakeFiles/WallController.dir/flags.make
+src/CMakeFiles/WallController.dir/StabilityCoM.cpp.o: ../src/StabilityCoM.cpp
+src/CMakeFiles/WallController.dir/StabilityCoM.cpp.o: src/CMakeFiles/WallController.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/praveen/wall_controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/WallController.dir/StabilityCoM.cpp.o"
+	cd /home/praveen/wall_controller/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/WallController.dir/StabilityCoM.cpp.o -MF CMakeFiles/WallController.dir/StabilityCoM.cpp.o.d -o CMakeFiles/WallController.dir/StabilityCoM.cpp.o -c /home/praveen/wall_controller/src/StabilityCoM.cpp
+
+src/CMakeFiles/WallController.dir/StabilityCoM.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/WallController.dir/StabilityCoM.cpp.i"
+	cd /home/praveen/wall_controller/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/praveen/wall_controller/src/StabilityCoM.cpp > CMakeFiles/WallController.dir/StabilityCoM.cpp.i
+
+src/CMakeFiles/WallController.dir/StabilityCoM.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/WallController.dir/StabilityCoM.cpp.s"
+	cd /home/praveen/wall_controller/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/praveen/wall_controller/src/StabilityCoM.cpp -o CMakeFiles/WallController.dir/StabilityCoM.cpp.s
+
 src/CMakeFiles/WallController.dir/polytope/edge.cpp.o: src/CMakeFiles/WallController.dir/flags.make
 src/CMakeFiles/WallController.dir/polytope/edge.cpp.o: ../src/polytope/edge.cpp
 src/CMakeFiles/WallController.dir/polytope/edge.cpp.o: src/CMakeFiles/WallController.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/praveen/wall_controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/WallController.dir/polytope/edge.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/praveen/wall_controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/WallController.dir/polytope/edge.cpp.o"
 	cd /home/praveen/wall_controller/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/WallController.dir/polytope/edge.cpp.o -MF CMakeFiles/WallController.dir/polytope/edge.cpp.o.d -o CMakeFiles/WallController.dir/polytope/edge.cpp.o -c /home/praveen/wall_controller/src/polytope/edge.cpp
 
 src/CMakeFiles/WallController.dir/polytope/edge.cpp.i: cmake_force
@@ -114,7 +128,7 @@ src/CMakeFiles/WallController.dir/polytope/edge.cpp.s: cmake_force
 src/CMakeFiles/WallController.dir/polytope/face.cpp.o: src/CMakeFiles/WallController.dir/flags.make
 src/CMakeFiles/WallController.dir/polytope/face.cpp.o: ../src/polytope/face.cpp
 src/CMakeFiles/WallController.dir/polytope/face.cpp.o: src/CMakeFiles/WallController.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/praveen/wall_controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/WallController.dir/polytope/face.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/praveen/wall_controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/WallController.dir/polytope/face.cpp.o"
 	cd /home/praveen/wall_controller/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/WallController.dir/polytope/face.cpp.o -MF CMakeFiles/WallController.dir/polytope/face.cpp.o.d -o CMakeFiles/WallController.dir/polytope/face.cpp.o -c /home/praveen/wall_controller/src/polytope/face.cpp
 
 src/CMakeFiles/WallController.dir/polytope/face.cpp.i: cmake_force
@@ -128,7 +142,7 @@ src/CMakeFiles/WallController.dir/polytope/face.cpp.s: cmake_force
 src/CMakeFiles/WallController.dir/polytope/outeredge.cpp.o: src/CMakeFiles/WallController.dir/flags.make
 src/CMakeFiles/WallController.dir/polytope/outeredge.cpp.o: ../src/polytope/outeredge.cpp
 src/CMakeFiles/WallController.dir/polytope/outeredge.cpp.o: src/CMakeFiles/WallController.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/praveen/wall_controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/WallController.dir/polytope/outeredge.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/praveen/wall_controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/WallController.dir/polytope/outeredge.cpp.o"
 	cd /home/praveen/wall_controller/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/WallController.dir/polytope/outeredge.cpp.o -MF CMakeFiles/WallController.dir/polytope/outeredge.cpp.o.d -o CMakeFiles/WallController.dir/polytope/outeredge.cpp.o -c /home/praveen/wall_controller/src/polytope/outeredge.cpp
 
 src/CMakeFiles/WallController.dir/polytope/outeredge.cpp.i: cmake_force
@@ -142,7 +156,7 @@ src/CMakeFiles/WallController.dir/polytope/outeredge.cpp.s: cmake_force
 src/CMakeFiles/WallController.dir/polytope/outerface.cpp.o: src/CMakeFiles/WallController.dir/flags.make
 src/CMakeFiles/WallController.dir/polytope/outerface.cpp.o: ../src/polytope/outerface.cpp
 src/CMakeFiles/WallController.dir/polytope/outerface.cpp.o: src/CMakeFiles/WallController.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/praveen/wall_controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/WallController.dir/polytope/outerface.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/praveen/wall_controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/WallController.dir/polytope/outerface.cpp.o"
 	cd /home/praveen/wall_controller/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/WallController.dir/polytope/outerface.cpp.o -MF CMakeFiles/WallController.dir/polytope/outerface.cpp.o.d -o CMakeFiles/WallController.dir/polytope/outerface.cpp.o -c /home/praveen/wall_controller/src/polytope/outerface.cpp
 
 src/CMakeFiles/WallController.dir/polytope/outerface.cpp.i: cmake_force
@@ -156,7 +170,7 @@ src/CMakeFiles/WallController.dir/polytope/outerface.cpp.s: cmake_force
 src/CMakeFiles/WallController.dir/polytope/outervertex.cpp.o: src/CMakeFiles/WallController.dir/flags.make
 src/CMakeFiles/WallController.dir/polytope/outervertex.cpp.o: ../src/polytope/outervertex.cpp
 src/CMakeFiles/WallController.dir/polytope/outervertex.cpp.o: src/CMakeFiles/WallController.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/praveen/wall_controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/WallController.dir/polytope/outervertex.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/praveen/wall_controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/WallController.dir/polytope/outervertex.cpp.o"
 	cd /home/praveen/wall_controller/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/WallController.dir/polytope/outervertex.cpp.o -MF CMakeFiles/WallController.dir/polytope/outervertex.cpp.o.d -o CMakeFiles/WallController.dir/polytope/outervertex.cpp.o -c /home/praveen/wall_controller/src/polytope/outervertex.cpp
 
 src/CMakeFiles/WallController.dir/polytope/outervertex.cpp.i: cmake_force
@@ -170,7 +184,7 @@ src/CMakeFiles/WallController.dir/polytope/outervertex.cpp.s: cmake_force
 src/CMakeFiles/WallController.dir/polytope/robustStabilityPolytope.cpp.o: src/CMakeFiles/WallController.dir/flags.make
 src/CMakeFiles/WallController.dir/polytope/robustStabilityPolytope.cpp.o: ../src/polytope/robustStabilityPolytope.cpp
 src/CMakeFiles/WallController.dir/polytope/robustStabilityPolytope.cpp.o: src/CMakeFiles/WallController.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/praveen/wall_controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/WallController.dir/polytope/robustStabilityPolytope.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/praveen/wall_controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/CMakeFiles/WallController.dir/polytope/robustStabilityPolytope.cpp.o"
 	cd /home/praveen/wall_controller/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/WallController.dir/polytope/robustStabilityPolytope.cpp.o -MF CMakeFiles/WallController.dir/polytope/robustStabilityPolytope.cpp.o.d -o CMakeFiles/WallController.dir/polytope/robustStabilityPolytope.cpp.o -c /home/praveen/wall_controller/src/polytope/robustStabilityPolytope.cpp
 
 src/CMakeFiles/WallController.dir/polytope/robustStabilityPolytope.cpp.i: cmake_force
@@ -184,7 +198,7 @@ src/CMakeFiles/WallController.dir/polytope/robustStabilityPolytope.cpp.s: cmake_
 src/CMakeFiles/WallController.dir/polytope/stabilityPolytope.cpp.o: src/CMakeFiles/WallController.dir/flags.make
 src/CMakeFiles/WallController.dir/polytope/stabilityPolytope.cpp.o: ../src/polytope/stabilityPolytope.cpp
 src/CMakeFiles/WallController.dir/polytope/stabilityPolytope.cpp.o: src/CMakeFiles/WallController.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/praveen/wall_controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/CMakeFiles/WallController.dir/polytope/stabilityPolytope.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/praveen/wall_controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/CMakeFiles/WallController.dir/polytope/stabilityPolytope.cpp.o"
 	cd /home/praveen/wall_controller/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/WallController.dir/polytope/stabilityPolytope.cpp.o -MF CMakeFiles/WallController.dir/polytope/stabilityPolytope.cpp.o.d -o CMakeFiles/WallController.dir/polytope/stabilityPolytope.cpp.o -c /home/praveen/wall_controller/src/polytope/stabilityPolytope.cpp
 
 src/CMakeFiles/WallController.dir/polytope/stabilityPolytope.cpp.i: cmake_force
@@ -198,7 +212,7 @@ src/CMakeFiles/WallController.dir/polytope/stabilityPolytope.cpp.s: cmake_force
 src/CMakeFiles/WallController.dir/polytope/staticPoint.cpp.o: src/CMakeFiles/WallController.dir/flags.make
 src/CMakeFiles/WallController.dir/polytope/staticPoint.cpp.o: ../src/polytope/staticPoint.cpp
 src/CMakeFiles/WallController.dir/polytope/staticPoint.cpp.o: src/CMakeFiles/WallController.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/praveen/wall_controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/CMakeFiles/WallController.dir/polytope/staticPoint.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/praveen/wall_controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object src/CMakeFiles/WallController.dir/polytope/staticPoint.cpp.o"
 	cd /home/praveen/wall_controller/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/WallController.dir/polytope/staticPoint.cpp.o -MF CMakeFiles/WallController.dir/polytope/staticPoint.cpp.o.d -o CMakeFiles/WallController.dir/polytope/staticPoint.cpp.o -c /home/praveen/wall_controller/src/polytope/staticPoint.cpp
 
 src/CMakeFiles/WallController.dir/polytope/staticPoint.cpp.i: cmake_force
@@ -212,7 +226,7 @@ src/CMakeFiles/WallController.dir/polytope/staticPoint.cpp.s: cmake_force
 src/CMakeFiles/WallController.dir/polytope/staticStabilityPolytope.cpp.o: src/CMakeFiles/WallController.dir/flags.make
 src/CMakeFiles/WallController.dir/polytope/staticStabilityPolytope.cpp.o: ../src/polytope/staticStabilityPolytope.cpp
 src/CMakeFiles/WallController.dir/polytope/staticStabilityPolytope.cpp.o: src/CMakeFiles/WallController.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/praveen/wall_controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object src/CMakeFiles/WallController.dir/polytope/staticStabilityPolytope.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/praveen/wall_controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object src/CMakeFiles/WallController.dir/polytope/staticStabilityPolytope.cpp.o"
 	cd /home/praveen/wall_controller/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/WallController.dir/polytope/staticStabilityPolytope.cpp.o -MF CMakeFiles/WallController.dir/polytope/staticStabilityPolytope.cpp.o.d -o CMakeFiles/WallController.dir/polytope/staticStabilityPolytope.cpp.o -c /home/praveen/wall_controller/src/polytope/staticStabilityPolytope.cpp
 
 src/CMakeFiles/WallController.dir/polytope/staticStabilityPolytope.cpp.i: cmake_force
@@ -226,7 +240,7 @@ src/CMakeFiles/WallController.dir/polytope/staticStabilityPolytope.cpp.s: cmake_
 src/CMakeFiles/WallController.dir/polytope/vertex.cpp.o: src/CMakeFiles/WallController.dir/flags.make
 src/CMakeFiles/WallController.dir/polytope/vertex.cpp.o: ../src/polytope/vertex.cpp
 src/CMakeFiles/WallController.dir/polytope/vertex.cpp.o: src/CMakeFiles/WallController.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/praveen/wall_controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object src/CMakeFiles/WallController.dir/polytope/vertex.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/praveen/wall_controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object src/CMakeFiles/WallController.dir/polytope/vertex.cpp.o"
 	cd /home/praveen/wall_controller/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/WallController.dir/polytope/vertex.cpp.o -MF CMakeFiles/WallController.dir/polytope/vertex.cpp.o.d -o CMakeFiles/WallController.dir/polytope/vertex.cpp.o -c /home/praveen/wall_controller/src/polytope/vertex.cpp
 
 src/CMakeFiles/WallController.dir/polytope/vertex.cpp.i: cmake_force
@@ -240,7 +254,7 @@ src/CMakeFiles/WallController.dir/polytope/vertex.cpp.s: cmake_force
 src/CMakeFiles/WallController.dir/problemDescriptor/contactPoints.cpp.o: src/CMakeFiles/WallController.dir/flags.make
 src/CMakeFiles/WallController.dir/problemDescriptor/contactPoints.cpp.o: ../src/problemDescriptor/contactPoints.cpp
 src/CMakeFiles/WallController.dir/problemDescriptor/contactPoints.cpp.o: src/CMakeFiles/WallController.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/praveen/wall_controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object src/CMakeFiles/WallController.dir/problemDescriptor/contactPoints.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/praveen/wall_controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object src/CMakeFiles/WallController.dir/problemDescriptor/contactPoints.cpp.o"
 	cd /home/praveen/wall_controller/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/WallController.dir/problemDescriptor/contactPoints.cpp.o -MF CMakeFiles/WallController.dir/problemDescriptor/contactPoints.cpp.o.d -o CMakeFiles/WallController.dir/problemDescriptor/contactPoints.cpp.o -c /home/praveen/wall_controller/src/problemDescriptor/contactPoints.cpp
 
 src/CMakeFiles/WallController.dir/problemDescriptor/contactPoints.cpp.i: cmake_force
@@ -254,7 +268,7 @@ src/CMakeFiles/WallController.dir/problemDescriptor/contactPoints.cpp.s: cmake_f
 src/CMakeFiles/WallController.dir/problemDescriptor/contactSet.cpp.o: src/CMakeFiles/WallController.dir/flags.make
 src/CMakeFiles/WallController.dir/problemDescriptor/contactSet.cpp.o: ../src/problemDescriptor/contactSet.cpp
 src/CMakeFiles/WallController.dir/problemDescriptor/contactSet.cpp.o: src/CMakeFiles/WallController.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/praveen/wall_controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object src/CMakeFiles/WallController.dir/problemDescriptor/contactSet.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/praveen/wall_controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object src/CMakeFiles/WallController.dir/problemDescriptor/contactSet.cpp.o"
 	cd /home/praveen/wall_controller/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/WallController.dir/problemDescriptor/contactSet.cpp.o -MF CMakeFiles/WallController.dir/problemDescriptor/contactSet.cpp.o.d -o CMakeFiles/WallController.dir/problemDescriptor/contactSet.cpp.o -c /home/praveen/wall_controller/src/problemDescriptor/contactSet.cpp
 
 src/CMakeFiles/WallController.dir/problemDescriptor/contactSet.cpp.i: cmake_force
@@ -268,7 +282,7 @@ src/CMakeFiles/WallController.dir/problemDescriptor/contactSet.cpp.s: cmake_forc
 src/CMakeFiles/WallController.dir/problemDescriptor/problemDescriptor.cpp.o: src/CMakeFiles/WallController.dir/flags.make
 src/CMakeFiles/WallController.dir/problemDescriptor/problemDescriptor.cpp.o: ../src/problemDescriptor/problemDescriptor.cpp
 src/CMakeFiles/WallController.dir/problemDescriptor/problemDescriptor.cpp.o: src/CMakeFiles/WallController.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/praveen/wall_controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object src/CMakeFiles/WallController.dir/problemDescriptor/problemDescriptor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/praveen/wall_controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object src/CMakeFiles/WallController.dir/problemDescriptor/problemDescriptor.cpp.o"
 	cd /home/praveen/wall_controller/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/WallController.dir/problemDescriptor/problemDescriptor.cpp.o -MF CMakeFiles/WallController.dir/problemDescriptor/problemDescriptor.cpp.o.d -o CMakeFiles/WallController.dir/problemDescriptor/problemDescriptor.cpp.o -c /home/praveen/wall_controller/src/problemDescriptor/problemDescriptor.cpp
 
 src/CMakeFiles/WallController.dir/problemDescriptor/problemDescriptor.cpp.i: cmake_force
@@ -282,7 +296,7 @@ src/CMakeFiles/WallController.dir/problemDescriptor/problemDescriptor.cpp.s: cma
 src/CMakeFiles/WallController.dir/wrapper/glpk_wrapper.cpp.o: src/CMakeFiles/WallController.dir/flags.make
 src/CMakeFiles/WallController.dir/wrapper/glpk_wrapper.cpp.o: ../src/wrapper/glpk_wrapper.cpp
 src/CMakeFiles/WallController.dir/wrapper/glpk_wrapper.cpp.o: src/CMakeFiles/WallController.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/praveen/wall_controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object src/CMakeFiles/WallController.dir/wrapper/glpk_wrapper.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/praveen/wall_controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object src/CMakeFiles/WallController.dir/wrapper/glpk_wrapper.cpp.o"
 	cd /home/praveen/wall_controller/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/WallController.dir/wrapper/glpk_wrapper.cpp.o -MF CMakeFiles/WallController.dir/wrapper/glpk_wrapper.cpp.o.d -o CMakeFiles/WallController.dir/wrapper/glpk_wrapper.cpp.o -c /home/praveen/wall_controller/src/wrapper/glpk_wrapper.cpp
 
 src/CMakeFiles/WallController.dir/wrapper/glpk_wrapper.cpp.i: cmake_force
@@ -296,7 +310,7 @@ src/CMakeFiles/WallController.dir/wrapper/glpk_wrapper.cpp.s: cmake_force
 src/CMakeFiles/WallController.dir/wrapper/solver_wrapper.cpp.o: src/CMakeFiles/WallController.dir/flags.make
 src/CMakeFiles/WallController.dir/wrapper/solver_wrapper.cpp.o: ../src/wrapper/solver_wrapper.cpp
 src/CMakeFiles/WallController.dir/wrapper/solver_wrapper.cpp.o: src/CMakeFiles/WallController.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/praveen/wall_controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object src/CMakeFiles/WallController.dir/wrapper/solver_wrapper.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/praveen/wall_controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object src/CMakeFiles/WallController.dir/wrapper/solver_wrapper.cpp.o"
 	cd /home/praveen/wall_controller/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/WallController.dir/wrapper/solver_wrapper.cpp.o -MF CMakeFiles/WallController.dir/wrapper/solver_wrapper.cpp.o.d -o CMakeFiles/WallController.dir/wrapper/solver_wrapper.cpp.o -c /home/praveen/wall_controller/src/wrapper/solver_wrapper.cpp
 
 src/CMakeFiles/WallController.dir/wrapper/solver_wrapper.cpp.i: cmake_force
@@ -311,6 +325,7 @@ src/CMakeFiles/WallController.dir/wrapper/solver_wrapper.cpp.s: cmake_force
 WallController_OBJECTS = \
 "CMakeFiles/WallController.dir/WallController.cpp.o" \
 "CMakeFiles/WallController.dir/PointProjector.cpp.o" \
+"CMakeFiles/WallController.dir/StabilityCoM.cpp.o" \
 "CMakeFiles/WallController.dir/polytope/edge.cpp.o" \
 "CMakeFiles/WallController.dir/polytope/face.cpp.o" \
 "CMakeFiles/WallController.dir/polytope/outeredge.cpp.o" \
@@ -332,6 +347,7 @@ WallController_EXTERNAL_OBJECTS =
 
 src/WallController.so: src/CMakeFiles/WallController.dir/WallController.cpp.o
 src/WallController.so: src/CMakeFiles/WallController.dir/PointProjector.cpp.o
+src/WallController.so: src/CMakeFiles/WallController.dir/StabilityCoM.cpp.o
 src/WallController.so: src/CMakeFiles/WallController.dir/polytope/edge.cpp.o
 src/WallController.so: src/CMakeFiles/WallController.dir/polytope/face.cpp.o
 src/WallController.so: src/CMakeFiles/WallController.dir/polytope/outeredge.cpp.o
@@ -382,7 +398,7 @@ src/WallController.so: /usr/local/lib/libeigen-quadprog.so.1.1.3
 src/WallController.so: /usr/local/lib/libeigen-qld.so.1.2.5
 src/WallController.so: /usr/lib/x86_64-linux-gnu/libnanomsg.so
 src/WallController.so: src/CMakeFiles/WallController.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/praveen/wall_controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX shared library WallController.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/praveen/wall_controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX shared library WallController.so"
 	cd /home/praveen/wall_controller/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/WallController.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

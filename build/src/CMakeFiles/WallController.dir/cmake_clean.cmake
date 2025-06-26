@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/WallController.dir/PointProjector.cpp.o"
   "CMakeFiles/WallController.dir/PointProjector.cpp.o.d"
+  "CMakeFiles/WallController.dir/StabilityCoM.cpp.o"
+  "CMakeFiles/WallController.dir/StabilityCoM.cpp.o.d"
   "CMakeFiles/WallController.dir/WallController.cpp.o"
   "CMakeFiles/WallController.dir/WallController.cpp.o.d"
   "CMakeFiles/WallController.dir/polytope/edge.cpp.o"
